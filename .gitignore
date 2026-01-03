@@ -1,0 +1,128 @@
+# PSLE Science AI Tutor - Git Ignore File
+# Prevents sensitive files and unnecessary files from being committed to version control
+
+# ============================================
+# SECURITY & SENSITIVE DATA
+# ============================================
+# Environment variables (contains API keys)
+.env
+.env.local
+.env.*.local
+
+# Streamlit secrets (local development only - Cloud uses web interface)
+.streamlit/secrets.toml
+
+# PDF files (copyright materials - do not commit)
+pdfs/
+*.pdf
+
+# ============================================
+# PYTHON
+# ============================================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ============================================
+# DATABASES
+# ============================================
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# IDE & EDITORS
+# ============================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# ============================================
+# OS
+# ============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ============================================
+# STREAMLIT
+# ============================================
+# Streamlit cache
+.streamlit/cache/
+
+# ============================================
+# LOGS
+# ============================================
+*.log
+logs/
+
+# ============================================
+# TEMPORARY FILES
+# ============================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
